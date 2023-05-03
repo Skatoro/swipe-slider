@@ -1,0 +1,117 @@
+.page {
+
+}
+.slide-forward {
+    -webkit-animation: slideIn 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slideForward 0.5s forwards;
+    animation-delay: 1s;
+}
+.slide-backward {
+    -webkit-animation: slideOut 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slideBackward 0.5s forwards;
+    animation-delay: 1s;
+}
+@-webkit-keyframes slideForward {
+    to {
+        left: -400px;
+    }
+}
+@keyframes slideForward {
+    to {
+        left: -400px;
+    }
+}
+@-webkit-keyframes slideBackward {
+    to {
+        left: 100px;
+        visibility: hidden;
+    }
+}
+@keyframes slideBackward {
+    to {
+        left: 100px;
+        visibility: hidden;
+    }
+}
+.shoes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.invisible{
+    opacity: 0;
+}
+.shoes-wrapper, .shoes-wrapper-duplicate{
+    aspect-ratio: 4/3;
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+}
+.shoes-wrapper:last-child{
+    margin-right: 0;
+}
+.photo-wrapper{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+.photo-container{
+    margin-bottom: 30px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 20px;
+    background: cadetblue;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    border: none;
+    transition: all 180ms ease-in-out;
+    width: 110px;
+    height: 60px;
+}
+.btn:hover{
+    background: #407778FF;
+}
+.pager-container{
+    display: flex;
+}
+.pager-unit{
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    background: cadetblue;
+    border-radius: 10px;
+    transition: all 180ms ease-in-out;
+}
+.pager-unit:last-child{
+    margin-right: 0;
+}
+.pager-unit:hover, .pager-active{
+    background: #407778FF;
+}
+.gallery-container{
+}
+.button-container-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.gallery-wrapper{
+    display: flex;
+    justify-content: center;
+}
